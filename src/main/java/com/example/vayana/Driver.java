@@ -12,9 +12,9 @@ public class Driver {
         List<Trip> trips = getTrips();
         Map<String, List<Trip>> tripsByAirline = createTripsByAirline(trips);
         Map<String, Set<String>> airLineServingCities = airLineServingCities(tripsByAirline);
-        System.out.println(airlineCoveringMaxCities(maxCount, airLineServingCities));
-        System.out.println(topCitiesServedMostAirlines(maxCount, airLineServingCities));
-        System.out.println(topAirlinesWithDirectFlights(maxCount, tripsByAirline));
+        System.out.println(airlineCoveringMaxCities(maxCount, airLineServingCities));//ouput is:[AA, AF, UA]
+        System.out.println(topCitiesServedMostAirlines(maxCount, airLineServingCities));//output is:[CDG, FRA, BKK]
+        System.out.println(topAirlinesWithDirectFlights(maxCount, tripsByAirline));//output is:[UA=1278, AA=1274, FR=1242]
     }
 
     private static List<Trip> getTrips() {
